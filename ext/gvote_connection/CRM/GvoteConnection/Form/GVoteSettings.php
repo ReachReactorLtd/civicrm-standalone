@@ -67,13 +67,9 @@ class CRM_GvoteConnection_Form_GVoteSettings extends CRM_Core_Form {
     );
           
     /*
-     * 
-- contribution information
-- membership information
-    
-    ./vendor/bin/cv api4 OptionGroup.get +w 'name = "activity_type"'
-     ./vendor/bin/cv api4 OptionValue.get +w 'option_group_id= 2'
-     */
+      - contribution information
+      - membership information
+    */
   
     $this->addButtons([
       [

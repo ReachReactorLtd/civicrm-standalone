@@ -46,3 +46,11 @@ function gvote_connection_civicrm_navigationMenu(&$params) {
         'separator' => 0,
     ]);
 }
+
+/**
+ * Implementation of hook_civicrm_postCommit().
+ */
+function gvote_connection_civicrm_postCommit($op, $objectName,
+                                             $objectId, &$objectRef) {
+      
+}
