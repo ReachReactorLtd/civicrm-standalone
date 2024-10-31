@@ -52,5 +52,23 @@ function gvote_connection_civicrm_navigationMenu(&$params) {
  */
 function gvote_connection_civicrm_postCommit($op, $objectName,
                                              $objectId, &$objectRef) {
-      
+  // Exit early if not a creation.
+  if ($op !== 'create') { return; }
+
+  // Exit early if it's the wrong object type.
+  if ($objectName !== 'Contribution' && $objectName !== 'Membership'
+    && $objectName !== 'Activity') { return; }
+  
+  // TODO: Get the settings.
+  
+  // TODO: Bail if the settings are not set.
+    
+  try {
+    // TODO: Build the payload.
+    // TODO: Send the payload to the GVOTE API.
+  }
+  catch (Exception $e) {
+    // Log the error.
+    \Civi::log()->error('Error in gvote_connection_civicrm_postCommit: ' . $e->getMessage());
+  }
 }
