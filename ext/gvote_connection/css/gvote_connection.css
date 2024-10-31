@@ -1,0 +1,9 @@
+#gvote_connection_endpoint {
+    max-width: 100%;
+    min-width: 24rem;
+}
+
+#gvote_connection_api_auth_token {
+    max-width: 100%;
+    min-width: 16rem;
+}

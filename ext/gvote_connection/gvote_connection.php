@@ -30,3 +30,19 @@ function gvote_connection_civicrm_install(): void {
 function gvote_connection_civicrm_enable(): void {
   _gvote_connection_civix_civicrm_enable();
 }
+
+/**
+ * Implements hook_civicrm_navigationMenu().
+ *
+ * Add entries to the navigation menu, automatically removed on uninstall
+ */
+function gvote_connection_civicrm_navigationMenu(&$params) {
+    _gvote_connection_civix_insert_navigation_menu($params, 'Administer', [
+        'label' => E::ts('GVote Connection Settings'),
+        'name' => 'GVote Connection Settings',
+        'url' => 'civicrm/gvote-settings',
+        'permission' => 'administer CiviCRM',
+        'operator' => 'OR',
+        'separator' => 0,
+    ]);
+}

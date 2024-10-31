@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension key="gvote_connection" type="module">
   <file>gvote_connection</file>
-  <name>gvote_connection</name>
+  <name>GVote Connection</name>
   <description>Connection between CiviCRM and GVote.</description>
   <license>AGPL-3.0</license>
   <authors>
@@ -37,5 +37,6 @@
     <mixin>mgd-php@1.0.0</mixin>
     <mixin>setting-php@1.0.0</mixin>
     <mixin>smarty@1.0.3</mixin>
+    <mixin>menu-xml@1.0.0</mixin>
   </mixins>
 </extension>
